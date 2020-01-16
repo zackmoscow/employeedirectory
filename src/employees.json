@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "role": "Sales Lead",
+    "department": "Sales",
+    "salary": 100000
+  },
+  {
+    "id": 2,
+    "name": "Mike Chan",
+    "role": "Salesperson",
+    "department": "Sales",
+    "salary": 80000
+  },
+  {
+    "id": 3,
+    "name": "Ashley Rodriguez",
+    "role": "Lead Engineer",
+    "department": "Engineering",
+    "salary": 150000
+  },
+  {
+    "id": 4,
+    "name": "Kevin Tupik",
+    "role": "Software Engineer",
+    "department": "Engineering",
+    "salary": 120000
+  },
+  {
+    "id": 5,
+    "name": "Malia Brown",
+    "role": "Accountant",
+    "department": "Finance",
+    "salary": 125000
+  },
+  {
+    "id": 6,
+    "name": "Sarah Lourd",
+    "role": "Legal Team Lead",
+    "department": "Legal",
+    "salary": 250000
+  },
+  {
+    "id": 7,
+    "name": "Tom Allen",
+    "role": "Lawyer",
+    "department": "Legal",
+    "salary": 190000
+  },
+  {
+    "id": 8,
+    "name": "Christian Eckenrode",
+    "role": "Software Engineer",
+    "department": "Engineering",
+    "salary": 120000
+  }
+]
