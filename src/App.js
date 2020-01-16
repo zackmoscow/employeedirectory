@@ -6,40 +6,40 @@ import "./App.css";
 
 class App extends React.Component {
 
-  state = { employees };
+  state = { filteredEmployees: employees };
 
   filterByDepartment = (dep) => {
-    const employees = this.state.employees.filter(o => o.department === dep);
-    this.setState({ employees });
+    const filteredEmployees = employees.filter(o => o.department === dep);
+    this.setState({ filteredEmployees });
   }
 
   sortEmployees = () => {
-    const employees = this.state.employees.sort(function(a, b) {
+    const filteredEmployees = employees.sort(function(a, b) {
       if (a.name < b.name) {
         return -1;
       }
       return 1;
     });
-    this.setState({ employees });
+    this.setState({ filteredEmployees });
   }
 
   sortSalary = () => {
-    const employees = this.state.employees.sort(function(a, b) {
+    const filteredEmployees = employees.sort(function(a, b) {
       if (a.salary < b.salary) {
         return 1;
       }
       return -1;
     });
-    this.setState({ employees });
+    this.setState({ filteredEmployees });
   }
 
   deleteEmployee = id => {
-    const employees = this.state.employees.filter(o => o.id !== id);
-    this.setState({ employees });
+    const filteredEmployees = employees.filter(o => o.id !== id);
+    this.setState({ filteredEmployees });
   }
 
   render() {
-    const employeeRows = this.state.employees.map(o => (
+    const employeeRows = this.state.filteredEmployees.map(o => (
       <EmployeeRow deleteEmployee={this.deleteEmployee} key={o.id} {...o} />
     ));
     return (
