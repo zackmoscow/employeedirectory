@@ -8,11 +8,6 @@ class App extends React.Component {
 
   state = { employees };
 
-  deleteEmployee = id => {
-    const employees = this.state.employees.filter(o => o.id !== id);
-    this.setState({ employees });
-  }
-
   filterByDepartment = (dep) => {
     const employees = this.state.employees.filter(o => o.department === dep);
     this.setState({ employees });
